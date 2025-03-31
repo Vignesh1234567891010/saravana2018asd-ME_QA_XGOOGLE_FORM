@@ -63,7 +63,7 @@ public class TestCases {
         String expected = driver.findElement(By.tagName("textarea")).getAttribute("data-initial-value");
         Assert.assertEquals(actual,expected);
 
-        System.out.println("Typed phrase into input box");
+        System.out.println("Typed phrase into input box: "+expected);
 
         //code to perform actions on radio button
         Wrappers.shiftToNextTab(driver);
