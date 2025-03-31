@@ -59,8 +59,11 @@ public class TestCases {
         long epochLong = System.currentTimeMillis()/1000;
         String epoch = String.valueOf(epochLong);
         String actual = "I want to be the best QA Engineer! "+epoch;
-        Wrappers.sendKeys(driver, actual);
-        String expected = driver.findElement(By.tagName("textarea")).getAttribute("data-initial-value");
+        Thread.sleep(1000);
+        WebElement parse_input = driver.findElement(By.tagName("textarea"));
+        parse_input.sendKeys(actual);
+        String expected = parse_input.getAttribute("data-initial-value");
+        Thread.sleep(2000);
         Assert.assertEquals(actual,expected);
 
         System.out.println("Typed phrase into input box: "+expected);
@@ -115,6 +118,7 @@ public class TestCases {
         String successMessage = driver.findElement(By.xpath("//div[text()='Thanks for your response, Automation Wizard!']")).getText();
         Assert.assertEquals(successMessage, "Thanks for your response, Automation Wizard!");
         System.out.println("Read the text at the end of submission: "+successMessage);
+        Thread.sleep(2000);
 
     }
 
