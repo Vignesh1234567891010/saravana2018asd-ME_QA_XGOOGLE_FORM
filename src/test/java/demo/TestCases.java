@@ -59,7 +59,6 @@ public class TestCases {
         long epochLong = System.currentTimeMillis()/1000;
         String epoch = String.valueOf(epochLong);
         String actual = "I want to be the best QA Engineer! "+epoch;
-        Thread.sleep(1000);
         WebElement parse_input = driver.findElement(By.tagName("textarea"));
         parse_input.sendKeys(actual);
         String expected = parse_input.getAttribute("data-initial-value");
