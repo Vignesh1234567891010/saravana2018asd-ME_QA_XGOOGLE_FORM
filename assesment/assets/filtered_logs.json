@@ -1,0 +1,160 @@
+{
+    "actions": [
+        {
+            "COMMAND": null,
+            "RESPONSE": null
+        },
+        {
+            "COMMAND": "[1743431013.890][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND InitSession {\n   \"capabilities\": {\n      \"firstMatch\": [ {\n         \"browserName\": \"chrome\",\n         \"goog:chromeOptions\": {\n            \"args\": [ \"--remote-allow-origins=*\" ],\n            \"binary\": \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\",\n            \"extensions\": [  ]\n         },\n         \"goog:loggingPrefs\": {\n            \"browser\": \"ALL\",\n            \"driver\": \"ALL\"\n         }\n      } ]\n   }\n}\n",
+            "RESPONSE": "[1743431014.728][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE InitSession {\n   \"capabilities\": {\n      \"acceptInsecureCerts\": false,\n      \"browserName\": \"chrome\",\n      \"browserVersion\": \"134.0.6998.178\",\n      \"chrome\": {\n         \"chromedriverVersion\": \"134.0.6998.165 (fd886e2cb29dd984c13deec032832dee68d8abe3-refs/branch-heads/6998@{#2122})\",\n         \"userDataDir\": \"C:\\\\Users\\\\sarav\\\\AppData\\\\Local\\\\Temp\\\\scoped_dir5876_148661530\"\n      },\n      \"fedcm:accounts\": true,\n      \"goog:chromeOptions\": {\n         \"debuggerAddress\": \"localhost:49830\"\n      },\n      \"networkConnectionEnabled\": false,\n      \"pageLoadStrategy\": \"normal\",\n      \"platformName\": \"windows\",\n      \"proxy\": {\n      },\n      \"setWindowRect\": true,\n      \"strictFileInteractability\": false,\n      \"timeouts\": {\n         \"implicit\": 0,\n         \"pageLoad\": 300000,\n         \"script\": 30000\n      },\n      \"unhandledPromptBehavior\": \"dismiss and notify\",\n      \"webauthn:extension:credBlob\": true,\n      \"webauthn:extension:largeBlob\": true,\n      \"webauthn:extension:minPinLength\": true,\n      \"webauthn:extension:prf\": true,\n      \"webauthn:virtualAuthenticators\": true\n   },\n   \"sessionId\": \"392430133e19aabc1f9dd7691a8d4770\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431014.852][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND SetTimeouts {\n   \"implicit\": 10000\n}\n",
+            "RESPONSE": null
+        },
+        {
+            "COMMAND": "[1743431014.856][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND MaximizeWindow {\n}\n",
+            "RESPONSE": "[1743431014.907][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE MaximizeWindow {\n   \"height\": 880,\n   \"width\": 1552,\n   \"x\": -8,\n   \"y\": -8\n}\n"
+        },
+        {
+            "COMMAND": "[1743431014.933][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND Navigate {\n   \"url\": \"https://docs.google.com/forms/d/e/1FAIpQLSep9LTMntH5YqIXa5nkiPKSs283kdwitBBhXWyZdAS-e4CxBQ/viewform\"\n}\n",
+            "RESPONSE": "[1743431015.929][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE Navigate\n"
+        },
+        {
+            "COMMAND": "[1743431015.952][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND GetUrl {\n}\n",
+            "RESPONSE": "[1743431016.721][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE GetUrl \"https://docs.google.com/forms/d/e/1FAIpQLSep9LTMntH5YqIXa5nkiPKSs283kdwitBBhXWyZdAS-e4CxBQ/viewform\"\n"
+        },
+        {
+            "COMMAND": "[1743431016.725][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND GetUrl {\n}\n",
+            "RESPONSE": "[1743431016.731][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE GetUrl \"https://docs.google.com/forms/d/e/1FAIpQLSep9LTMntH5YqIXa5nkiPKSs283kdwitBBhXWyZdAS-e4CxBQ/viewform\"\n"
+        },
+        {
+            "COMMAND": "[1743431016.736][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//div[@id='i1']/following::input[1]\"\n}\n",
+            "RESPONSE": "[1743431016.747][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.5\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431018.758][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND TypeElement {\n   \"id\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.5\",\n   \"text\": \"Crio Learner\",\n   \"value\": [ \"C\", \"r\", \"i\", \"o\", \" \", \"L\", \"e\", \"a\", \"r\", \"n\", \"e\", \"r\" ]\n}\n",
+            "RESPONSE": "[1743431018.890][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE TypeElement\n"
+        },
+        {
+            "COMMAND": "[1743431018.916][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431018.930][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431018.962][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"I\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"I\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"w\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"w\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"a\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"a\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"n\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"n\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"t\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"t\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"t\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"t\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"o\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"o\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"b\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"b\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"t\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"t\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"h\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"h\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"b\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"b\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"s\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"s\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"t\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"t\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"Q\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"Q\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"A\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"A\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"E\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"E\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"n\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"n\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"g\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"g\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"i\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"i\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"n\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"n\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"e\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"r\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"r\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"!\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"!\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \" \"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"1\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"1\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"7\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"7\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"4\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"4\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"3\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"3\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"4\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"4\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"2\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"2\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"4\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"4\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"6\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"6\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"7\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"7\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"0\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"0\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431019.249][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431019.252][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431019.256][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431019.259][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//*[@id='i16']/div[3]\"\n}\n",
+            "RESPONSE": "[1743431019.271][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.24\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431019.274][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND ClickElement {\n   \"id\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.24\"\n}\n",
+            "RESPONSE": "[1743431019.339][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE ClickElement\n"
+        },
+        {
+            "COMMAND": "[1743431019.346][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431019.351][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431019.353][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//label[@for='i34']\"\n}\n",
+            "RESPONSE": "[1743431019.363][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.13\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431019.368][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND ClickElement {\n   \"id\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.13\"\n}\n",
+            "RESPONSE": "[1743431019.419][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE ClickElement\n"
+        },
+        {
+            "COMMAND": "[1743431019.421][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//label[@for='i37']\"\n}\n",
+            "RESPONSE": "[1743431019.433][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.14\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431019.439][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND ClickElement {\n   \"id\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.14\"\n}\n",
+            "RESPONSE": "[1743431019.482][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE ClickElement\n"
+        },
+        {
+            "COMMAND": "[1743431019.485][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//label[@for='i43']\"\n}\n",
+            "RESPONSE": "[1743431019.494][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.16\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431019.497][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND ClickElement {\n   \"id\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.16\"\n}\n",
+            "RESPONSE": "[1743431019.534][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE ClickElement\n"
+        },
+        {
+            "COMMAND": "[1743431019.537][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//div[@jsname='wQNmvb'][2]\"\n}\n",
+            "RESPONSE": "[1743431019.567][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.35\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431019.577][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"duration\": 100,\n         \"origin\": {\n            \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.35\"\n         },\n         \"type\": \"pointerMove\",\n         \"x\": 0,\n         \"y\": 0\n      }, {\n         \"button\": 0,\n         \"type\": \"pointerDown\"\n      }, {\n         \"button\": 0,\n         \"type\": \"pointerUp\"\n      } ],\n      \"id\": \"default mouse\",\n      \"parameters\": {\n         \"pointerType\": \"mouse\"\n      },\n      \"type\": \"pointer\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431019.699][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431019.703][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//*[@id='mG61Hd']/div[2]/div/div[2]/div[5]/div/div/div[2]/div/div[2]\"\n}\n",
+            "RESPONSE": "[1743431019.732][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.36\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431020.262][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//*[@id='mG61Hd']/div[2]/div/div[2]/div[5]/div/div/div[2]/div/div[2]\"\n}\n",
+            "RESPONSE": "[1743431020.277][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.36\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431020.310][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u2022\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"\u00ee\u20ac\u201c\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431020.322][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431020.333][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u2021\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u2021\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431020.336][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431022.354][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431022.373][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431022.388][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"2\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"2\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"4\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"4\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"0\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"0\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"3\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"3\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"2\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"2\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"0\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"0\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"2\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"2\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"5\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"5\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431022.426][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431022.430][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431022.435][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431022.437][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431022.447][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431022.451][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"0\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"0\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"7\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"7\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431022.462][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431022.466][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"\u00ee\u20ac\u201e\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431022.471][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431022.482][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"type\": \"keyDown\",\n         \"value\": \"3\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"3\"\n      }, {\n         \"type\": \"keyDown\",\n         \"value\": \"0\"\n      }, {\n         \"type\": \"keyUp\",\n         \"value\": \"0\"\n      } ],\n      \"id\": \"default keyboard\",\n      \"type\": \"key\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431022.495][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431024.514][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//span[text()='Submit']\"\n}\n",
+            "RESPONSE": "[1743431024.523][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.48\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431024.526][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND PerformActions {\n   \"actions\": [ {\n      \"actions\": [ {\n         \"duration\": 100,\n         \"origin\": {\n            \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.2982291CD5AE75D2FD44907B41A3BAEC.e.48\"\n         },\n         \"type\": \"pointerMove\",\n         \"x\": 0,\n         \"y\": 0\n      }, {\n         \"button\": 0,\n         \"type\": \"pointerDown\"\n      }, {\n         \"button\": 0,\n         \"type\": \"pointerUp\"\n      } ],\n      \"id\": \"default mouse\",\n      \"parameters\": {\n         \"pointerType\": \"mouse\"\n      },\n      \"type\": \"pointer\"\n   } ]\n}\n",
+            "RESPONSE": "[1743431024.652][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE PerformActions\n"
+        },
+        {
+            "COMMAND": "[1743431024.655][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//div[text()='Thanks for your response, Automation Wizard!']\"\n}\n",
+            "RESPONSE": "[1743431025.347][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.13155DD7864EE275DD9D5E2144398F76.e.54\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431025.362][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND FindElement {\n   \"using\": \"xpath\",\n   \"value\": \"//div[text()='Thanks for your response, Automation Wizard!']\"\n}\n",
+            "RESPONSE": "[1743431025.369][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE FindElement {\n   \"element-6066-11e4-a52e-4f735466cecf\": \"f.A42BBBD8C9623A75563A47027682EF45.d.13155DD7864EE275DD9D5E2144398F76.e.54\"\n}\n"
+        },
+        {
+            "COMMAND": "[1743431025.372][INFO]: [392430133e19aabc1f9dd7691a8d4770] COMMAND GetElementText {\n   \"id\": \"f.A42BBBD8C9623A75563A47027682EF45.d.13155DD7864EE275DD9D5E2144398F76.e.54\"\n}\n",
+            "RESPONSE": "[1743431025.434][INFO]: [392430133e19aabc1f9dd7691a8d4770] RESPONSE GetElementText \"Thanks for your response, Automation Wizard!\"\n"
+        }
+    ]
+}
