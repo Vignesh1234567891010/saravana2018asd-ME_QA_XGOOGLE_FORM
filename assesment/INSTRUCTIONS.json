@@ -83,7 +83,7 @@
               "expected_value": "I want to be the best QA Engineer"
             }
           ],
-          "join": "AND",
+          "join": "OR",
           "success_out": "Typed phrase into input box",
           "hint": "Ensure that you entered the text provided into phrase input"
         },

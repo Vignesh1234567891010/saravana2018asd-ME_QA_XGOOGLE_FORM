@@ -56,7 +56,12 @@ public class TestCases {
 
         //Code to perform answer in input box
         Wrappers.shiftToNextTab(driver);
-        Wrappers.sendKeys(driver, "I want to be the best QA Engineer! 1743424670");
+        long epochLong = System.currentTimeMillis()/1000;
+        String epoch = String.valueOf(epochLong);
+        String actual = "I want to be the best QA Engineer! "+epoch;
+        Wrappers.sendKeys(driver, actual);
+        String expected = driver.findElement(By.tagName("textarea")).getAttribute("data-initial-value");
+        Assert.assertEquals(actual,expected);
 
         System.out.println("Typed phrase into input box");
 
