@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.logging.Level;
 // import io.github.bonigarcia.wdm.WebDriverManager;
 import demo.wrappers.Wrappers;
@@ -29,96 +30,98 @@ public class TestCases {
     @Test(description = "Automate Google Form", enabled = true)
     public void testCase01() throws InterruptedException {
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        //Create Object for Wrapper Class to use it
+        Wrappers actions = new Wrappers(driver);
+        System.out.println("Start Test Case");
 
-        //Navigated to expected Url
-        driver.navigate().to("https://docs.google.com/forms/d/e/1FAIpQLSep9LTMntH5YqIXa5nkiPKSs283kdwitBBhXWyZdAS-e4CxBQ/viewform");
+        //Navigate to Url
+        actions.navigateToUrl("https://docs.google.com/forms/d/e/1FAIpQLSep9LTMntH5YqIXa5nkiPKSs283kdwitBBhXWyZdAS-e4CxBQ/viewform");
+        System.out.println("Test Step: Navigated to Url Successfully");
 
-        wait.until(ExpectedConditions.urlToBe("https://docs.google.com/forms/d/e/1FAIpQLSep9LTMntH5YqIXa5nkiPKSs283kdwitBBhXWyZdAS-e4CxBQ/viewform"));
+        //Find WebElement to Name Field
+        WebElement name_field = actions.getElement(By.xpath("//div[contains(@class,'snByac')]//preceding-sibling::input"));
 
-        String currentUrl = Wrappers.getCurrentUrl(driver);
+        //Type in Name Field
+        actions.type(name_field, "Crio Learner");
+        System.out.println("Test Step: Successfully entered text in the field");
 
-        if(currentUrl.contains("forms")){
-            Assert.assertTrue(true);
-            System.out.println("Navigated to the google form");
+        //Find WebElement to Why are you practicing Automation Field
+
+        WebElement nextField = actions.getElement(By.xpath("//div[contains(@class,'snByac')]//following::textarea"));
+
+        //Type in Next Field
+
+        actions.type(nextField, "I want to be the best QA Engineer! "+actions.getEpochTime());
+        System.out.println("Test Step: Successfully entered text in the field");
+
+        //Find List of Radio Buttons
+        List<WebElement> radioButtons = actions.getElements(By.xpath("//div[contains(@class,'nWQGrd')]"));
+
+        //Click on radio button according to the visible text
+        actions.clickRadioButtonByVisibleText(radioButtons, "0 - 2");
+        System.out.println("Test Step: Successfully Clicked on Radio Button");
+
+        //Find List of Check Boxes
+        List<WebElement> checkBoxes = actions.getElements(By.xpath("//div[@class='eBFwI']"));
+
+        //Click check Boxes according to visible text
+        actions.clickCheckBoxByVisibleText(checkBoxes, "Java", "Selenium", "TestNG");
+        System.out.println("Test Step: Successfully Clicked On Check Boxes");
+
+        //Find WebElement for Drop Down
+        WebElement dropDown = actions.getElement(By.xpath("//div[contains(@class,'LMgvRb ')]"));
+
+        //Click on to open DropDown List
+        actions.clickElement(dropDown);
+        System.out.println("Test Step: Successfully Clicked on DropDown ");
+
+        //Find List of WebElement of Drop Down List
+        List<WebElement> dropDownList = actions.getElements(By.xpath("//div[contains(@class,'ncFHed')]//child::span[not(contains(text(),'Choose'))]"));
+
+        //Click DropDown By Visible Text
+        actions.clickDropDownListByVisibleText(dropDownList, "Mr");
+        System.out.println("Test Step: Successfully Clicked on DropDown List");
+
+        //Find WebElement of Date Field
+        WebElement dateField = actions.getElement(By.xpath("//input[@type='date']"));
+
+        //Provide Current Date Minus 7 Days in the field
+        actions.type(dateField, actions.getCurrentDateInFormat());
+        System.out.println("Test Step: Successfully Provided CurrentDate Minus 7 days in the date field");
+
+        //Find WebElement for Hour Filed
+        WebElement hourField = actions.getElement(By.xpath("//input[@aria-label='Hour']"));
+
+        //Type in the hour Field
+        actions.type(hourField, "07");
+        System.out.println("Test Step: Successfully Provided hour in the hour Field");
+
+        //Find WebElement for Minute Field
+        WebElement minuteField = actions.getElement(By.xpath("//input[@aria-label='Minute']"));
+
+        //Type in Minute Field
+        actions.type(minuteField, "30");
+        System.out.println("Test Step: Successfully provided Minute in the minute Field");
+
+        //Find WebElement of Submit Button
+        WebElement submitButton = actions.getElement(By.xpath("//span[text()='Submit']"));
+
+        //Click on submit element
+        actions.clickElement(submitButton);
+        System.out.println("Test Step: Successfully Clicked on the submit button");
+
+        //Find WebElement of Success Message
+        WebElement successMessageElement = actions.getElement(By.xpath("//div[contains(text(),'Thanks')]"));
+
+        //Compare Expected Text With actual Text
+        String ExpectedText = "Thanks for your response, Automation Wizard!";
+        if(actions.getSuccessMessage(successMessageElement, ExpectedText)){
+            System.out.println("Test Case Success");
         }else {
-            Assert.assertFalse(false);
-            System.out.println("Unable to navigate to google form");
+            System.out.println("Test Case Failed");
         }
 
-        //Code to perform Name in field
-        WebElement name_field = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='i1']/following::input[1]")));
-        Thread.sleep(2000);
-        name_field.sendKeys("Crio Learner");
-
-        System.out.println("Typed name into input box");
-
-
-        //Code to perform answer in input box
-        Wrappers.shiftToNextTab(driver);
-        long epochLong = System.currentTimeMillis()/1000;
-        String epoch = String.valueOf(epochLong);
-        String actual = "I want to be the best QA Engineer! "+epoch;
-        WebElement parse_input = driver.findElement(By.tagName("textarea"));
-        parse_input.sendKeys(actual);
-        String expected = parse_input.getAttribute("data-initial-value");
-        Thread.sleep(2000);
-        Assert.assertEquals(actual,expected);
-
-        System.out.println("Typed phrase into input box: "+expected);
-
-        //code to perform actions on radio button
-        Wrappers.shiftToNextTab(driver);
-        WebElement zero_to_two = driver.findElement(By.xpath("//*[@id='i16']/div[3]"));
-        zero_to_two.click();
-        System.out.println("Clicked on Experience box");
-
-        //Code to perform actions on checkBox
-        Wrappers.shiftToNextTab(driver);
-        WebElement javaCheck = driver.findElement(By.xpath("//label[@for='i34']"));
-        javaCheck.click();
-
-        WebElement seleniumCheck = driver.findElement(By.xpath("//label[@for='i37']"));
-        seleniumCheck.click();
-
-
-        WebElement testNGCheck = driver.findElement(By.xpath("//label[@for='i43']"));
-        testNGCheck.click();
-        System.out.println("Chose any of the Tools you are experienced in");
-
-        //Code to perform actions on dropdown
-        WebElement dropDown = driver.findElement(By.xpath("//div[@jsname='wQNmvb'][2]"));
-        Wrappers.click(driver, dropDown);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='mG61Hd']/div[2]/div/div[2]/div[5]/div/div/div[2]/div/div[2]")));
-        Wrappers.downArrow(driver);
-        Wrappers.enter(driver);
-        Thread.sleep(2000);
-        System.out.println("Chose how to be addressed option");
-
-        //Code to perform action in simple calendar
-        Wrappers.shiftToNextTab(driver);
-        Wrappers.sendKeys(driver, "24032025");
-        System.out.println("Entered 7 days before date");
-
-        //Code to perform actions on time input field
-        Wrappers.shiftToNextTab(driver);
-        Wrappers.shiftToNextTab(driver);
-        Wrappers.sendKeys(driver, "07");
-        Wrappers.shiftToNextTab(driver);
-        Wrappers.sendKeys(driver, "30");
-        Thread.sleep(2000);
-        System.out.println("Entered correct time into time input");
-        // Code to perform submit form
-        WebElement submitButton = driver.findElement(By.xpath("//span[text()='Submit']"));
-        Wrappers.click(driver, submitButton);
-
-        //Code to get Success Message
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Thanks for your response, Automation Wizard!']")));
-        String successMessage = driver.findElement(By.xpath("//div[text()='Thanks for your response, Automation Wizard!']")).getText();
-        Assert.assertEquals(successMessage, "Thanks for your response, Automation Wizard!");
-        System.out.println("Read the text at the end of submission: "+successMessage);
-        Thread.sleep(2000);
-
+        actions.waitFor(5000);
     }
 
      
@@ -144,7 +147,7 @@ public class TestCases {
         System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "build/chromedriver.log"); 
 
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.manage().window().maximize();
     }
 
