@@ -14,8 +14,8 @@ public class Wrappers {
     /*
      * Write your selenium wrappers here
      */
-    private WebDriver driver;
-    private WebDriverWait wait;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
 
     public Wrappers(WebDriver driver){
         this.driver = driver;
